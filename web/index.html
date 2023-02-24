@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <noscript>noscript</noscript>
+        <div style="height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+
+		<div>mouse click - move camera</div>
+		<div>scroll - zoom</div>
+		<div>keyboard c - toggle ground camera</div>
+		<div>manual control - wasd, r retro, f auto</div>
+
+            <canvas class="rendercanvas" id="canvas" oncontextmenu="event.preventDefault()"></canvas>
+        </div>
+        <script type='text/javascript'>
+            var Module = {canvas: (function() {return document.getElementById('canvas');})()};
+        </script>
+        <script src="app.js"></script>
+    </body>
+</html>
